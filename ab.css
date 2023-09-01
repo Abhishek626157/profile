@@ -1,0 +1,16 @@
+div {
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  border-radius: 65px 16px 95px;
+  background-image: linear-gradient(
+    to right top,
+    #2761e3,
+    #0095ff,
+    #00bbf6,
+    #00d8a2,
+    #4fe95b
+  );
+  margin-left: 450px;
+  
+}

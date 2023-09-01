@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else</title>
+    <link rel="stylesheet" href="ab.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>Impliement Function</h1>
+      Enter Number 1 <br />
+      <input type="text" id="a1" /> <br />
+      Enter Number 2 <br />
+      <input type="text" id="a2" /> <br />
+      <br />
+      Result <br />
+      <input type="text" id="result" /> <br /><br />
+      <button onclick="add()" value="addition" id="addd">add</button>
+      <button onclick="sub()" value="substract" id="addd">sub</button>
+      <button onclick="divi()" value="division" id="addd">divi</button>
+      <button onclick="milti()" value="multiply" id="addd">milti</button>
+      <button onclick="result.value=''">clear</button>
+    </div>
+  </body>
+</html>
+<script>
+  function add() {
+    var a1 = parseInt(document.getElementById("a1").value);
+    var a2 = parseInt(document.getElementById("a2").value);
+
+    if (a1 <= 0) {
+      alert("its is rong");
+    } else if (a2 <= 0) {
+      alert("its is rong");
+    } else {
+      var result = (document.getElementById("result").value = a1 + a2);
+    }
+  }
+  function sub() {
+    var a1 = parseInt(document.getElementById("a1").value);
+    var a2 = parseInt(document.getElementById("a2").value);
+
+    if (a1 <= 0) {
+      alert("its is rong");
+    } else if (a2 <= 0) {
+      alert("its is rong");
+    } else {
+      var result = (document.getElementById("result").value = a1 - a2);
+    }
+  }
+  function divi() {
+    var a1 = parseInt(document.getElementById("a1").value);
+    var a2 = parseInt(document.getElementById("a2").value);
+    if (a1 <= 0) {
+      alert("its is rong");
+    } else if (a2 <= 0) {
+      alert("its is rong");
+    } else {
+      var result = (document.getElementById("result").value = a1 / a2);
+    }
+  }
+  function milti() {
+    var a1 = parseInt(document.getElementById("a1").value);
+    var a2 = parseInt(document.getElementById("a2").value);
+    if (a1 <= 0) {
+      alert("its is rong");
+    } else if (a2 <= 0) {
+      alert("its is rong");
+    } else {
+      var result = (document.getElementById("result").value = a1 * a2);
+    }
+  }
+</script>
